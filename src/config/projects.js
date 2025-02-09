@@ -76,6 +76,6 @@ export const projects = [
     link: '#',
     github: 'https://github.com/sezerfurkan/project-space',
     image: '/images/project-space.jpg',
-    date: 'August 2023'
+    date: 'August 2022'
   }
 ];
