@@ -65,7 +65,7 @@ export const projects = [
     link: '#',
     github: 'https://github.com/sezerfurkan/project-deja-vu',
     image: '/images/project-deja-vu.jpg',
-    date: 'August 2023'
+    date: 'August 2022'
   },
   {
     id: 7,
