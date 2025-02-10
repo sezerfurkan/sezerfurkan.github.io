@@ -30,4 +30,4 @@ jobs:
         with:
           folder: dist
           branch: gh-pages
-          token: ${{ secrets.PAGES.DEPLOY }}
+          token: ${{ secrets.PAGES_DEPLOY }}
