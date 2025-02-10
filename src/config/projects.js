@@ -9,7 +9,7 @@ export const projects = [
     technologies: ['Python', 'OpenCV', 'Numpy'],
     link: '#',
     github: 'https://github.com/sezerfurkan/casmarine-photomosaic-of-the-wrack',
-    image: '/images/photomosaic-of-the-wreck.jpg',
+    image: '/sezerfurkan.github.io/images/photomosaic-of-the-wreck.jpg',
     date: 'June 2023'
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     technologies: ['Python', 'OpenCV', 'Scikit-learn'],
     link: '#',
     github: 'https://github.com/sezerfurkan/solar-irradiance-detection-with-image-processing',
-    image: '/images/solar-irradiance-detection-with-image-processing.jpg',
+    image: '/sezerfurkan.github.io/images/solar-irradiance-detection-with-image-processing.jpg',
     date: 'August 2023'
   },
   {
@@ -31,7 +31,7 @@ export const projects = [
     technologies: ['Python', 'OpenCV', 'Numpy'],
     link: '#',
     github: 'https://github.com/sezerfurkan/underwater-line-tracking',
-    image: '/images/underwater-line-tracking.jpg',
+    image: '/sezerfurkan.github.io/images/underwater-line-tracking.jpg',
     date: 'August 2023'
   },
   {
@@ -42,7 +42,7 @@ export const projects = [
     technologies: ['Python', 'OpenCV', 'Mathematics'],
     link: '#',
     github: 'https://github.com/sezerfurkan/shape-detection-with-rdp-algorithm',
-    image: '/images/shape-detection-with-rdp-algorithm.jpg',
+    image: '/sezerfurkan.github.io/images/shape-detection-with-rdp-algorithm.jpg',
     date: 'August 2023'
   },
   {
@@ -53,7 +53,7 @@ export const projects = [
     technologies: ['Unity', 'C#', 'Android'],
     link: '#',
     github: 'https://github.com/sezerfurkan/ocean-rush',
-    image: '/images/ocean-rush.jpg',
+    image: '/sezerfurkan.github.io/images/ocean-rush.jpg',
     date: 'August 2023'
   },
   {
@@ -64,7 +64,7 @@ export const projects = [
     technologies: ['Unity', 'C#', 'Android'],
     link: '#',
     github: 'https://github.com/sezerfurkan/project-deja-vu',
-    image: '/images/project-deja-vu.jpg',
+    image: '/sezerfurkan.github.io/images/project-deja-vu.jpg',
     date: 'August 2022'
   },
   {
@@ -75,7 +75,7 @@ export const projects = [
     technologies: ['Unity', 'C#', 'Android'],
     link: '#',
     github: 'https://github.com/sezerfurkan/project-space',
-    image: '/images/project-space.jpg',
+    image: '/sezerfurkan.github.io/images/project-space.jpg',
     date: 'August 2022'
   }
 ];
