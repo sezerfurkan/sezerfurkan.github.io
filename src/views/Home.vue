@@ -44,14 +44,17 @@
       <h2>Featured Projects</h2>
       <div class="featured-grid">
         <router-link 
-          v-for="project in featuredProjects" 
+          v-for="project in projects" 
           :key="project.id"
           to="/projects"
           class="featured-card"
         >
           <img :src="project.image" :alt="project.title">
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.category }}</p>
+          <div class="card-content">
+            <h3>{{ project.title }}</h3>
+            <p class="category">{{ project.category }}</p>
+            <p class="description">{{ project.description }}</p>
+          </div>
         </router-link>
       </div>
     </section>
@@ -64,8 +67,8 @@ import { projects } from '@/config/projects'
 export default {
   name: 'HomeView',
   computed: {
-    featuredProjects() {
-      return projects.slice(0, 3)
+    projects() {
+      return projects
     }
   }
 }
@@ -141,42 +144,74 @@ export default {
 }
 
 .featured-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  overflow-x: auto;
   gap: 2rem;
-  margin: 2rem 0;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.featured-grid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .featured-card {
-  position: relative;
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  border: 1px solid #eee;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s;
   text-decoration: none;
   color: inherit;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .featured-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .featured-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-bottom: 3px solid #42b983;
 }
 
-.featured-card h3 {
+.card-content {
   padding: 1rem;
-  margin: 0;
-  background: rgba(255, 255, 255, 0.9);
 }
 
-.featured-card p {
-  padding: 0 1rem 1rem;
+.card-content h3 {
   margin: 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.category {
+  color: #42b983;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.description {
   color: #666;
-  background: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .featured-card {
+    flex: 0 0 280px;
+  }
 }
 
 section {
