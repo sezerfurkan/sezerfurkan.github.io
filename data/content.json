@@ -1,0 +1,50 @@
+{
+  "title": "Furkan Sezer's Portfolio",
+  "navigation": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "about": {
+    "greeting": "Hi, I'm Furkan Sezer 👋",
+    "title": "",
+    "description": "I am a software engineer. During my education, I aimed to develop skills in software development. In line with this goal, I worked on projects involving image processing, artificial intelligence, Linux systems, and game and application development. I am continually improving myself in these areas. Currently, I am working at an IoT company, focusing on artificial intelligence and image processing and also when I have time I develop my own games."
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "categories": [
+      {
+        "title": "Programming Languages",
+        "items": ["Python", "C", "C++", "C#"]
+      },
+      {
+        "title": "Tools & Platforms",
+        "items": ["Git", "Docker", "Linux", "AWS", "Unity", "Qt"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "links": [
+      {
+        "type": "email",
+        "icon": "fas fa-envelope",
+        "text": "furkan-sezer@outlook.com",
+        "url": "mailto:furkan-sezer@outlook.com"
+      },
+      {
+        "type": "github",
+        "icon": "fab fa-github",
+        "text": "https://github.com/sezerfurkan",
+        "url": "https://github.com/sezerfurkan"
+      },
+      {
+        "type": "linkedin",
+        "icon": "fab fa-linkedin",
+        "text": "https://linkedin.com/in/sezerfurkan",
+        "url": "https://linkedin.com/in/sezerfurkan"
+      }
+    ]
+  }
+} 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Game Player | De Ja Vu</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <style>
+        :root {
+            --bg-color: #282a36;
+            --text-color: #f8f8f2;
+            --accent-color: #50fa7b;
+            --terminal-header: #44475a;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem;
+            background-color: var(--bg-color);
+            font-family: 'Fira Code', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        @media (max-width: 960px) {
+            body {
+                padding: 0;
+            }
+        }
+
+        .terminal-container {
+            background-color: var(--bg-color);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            margin: 2rem;
+        }
+
+        .terminal-header {
+            background-color: var(--terminal-header);
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .terminal-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .terminal-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .close { background-color: #ff5f56; }
+        .minimize { background-color: #ffbd2e; }
+        .maximize { background-color: #27c93f; }
+
+        .terminal-title {
+            margin-left: 1rem;
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+
+        .webgl-content {
+            background-color: var(--bg-color);
+        }
+
+        .webgl-content .footer {
+            background-color: var(--terminal-header);
+            color: var(--text-color);
+        }
+
+        .webgl-content .footer .title {
+            color: var(--text-color);
+        }
+
+        #unityContainer {
+            border: 1px solid var(--terminal-header);
+        }
+
+        .fullscreen {
+            color: var(--accent-color) !important;
+        }
+    </style>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button close"></span>
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+            </div>
+            <div class="terminal-title">game.sh - De Ja Vu</div>
+        </div>
+        <div id="unityContainer"></div>
+        <div class="footer">
+            <div class="webgl-logo">Unity WebGL Player</div>
+            <div class="title">De Ja Vu</div>
+            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        </div>
+    </div>
+  </body>
+</html>

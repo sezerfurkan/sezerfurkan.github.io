@@ -1,0 +1,87 @@
+{
+  "categories": ["All", "Image Processing", "Games"],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Photomosaic of the Wrack",
+      "description": "An image processing project that creates a photomosaic of the wrack. It uses image processing to create a photomosaic of the wrack from a collection of underwater images.",
+      "category": "Image Processing",
+      "tags": ["Python", "OpenCV", "Numpy"],
+      "github": "https://github.com/sezerfurkan/casmarine-photomosaic-of-the-wrack",
+      "image": "img/photomosaic-of-the-wreck.jpg",
+      "date": "June 2023"
+    },
+    {
+      "id": 2,
+      "title": "Solar Irradiance Detection",
+      "description": "An image processing project that detects solar irradiance. It uses image processing to find sun location and includes a polynomial regression model to predict solar irradiance.",
+      "category": "Image Processing",
+      "tags": ["Python", "OpenCV", "Scikit-learn"],
+      "github": "https://github.com/sezerfurkan/solar-irradiance-detection-with-image-processing",
+      "image": "img/solar-irradiance-detection-with-image-processing.jpg",
+      "date": "August 2023"
+    },
+    {
+      "id": 3,
+      "title": "Underwater Line Tracking",
+      "description": "An image processing project that tracks lines underwater. It uses image processing to detect and track lines underwater.",
+      "category": "Image Processing",
+      "tags": ["Python", "OpenCV", "Numpy"],
+      "github": "https://github.com/sezerfurkan/underwater-line-tracking",
+      "image": "img/underwater-line-tracking.jpg",
+      "date": "August 2023"
+    },
+    {
+      "id": 4,
+      "title": "Shape Detection with RDP Algorithm",
+      "description": "An image processing project that detects shapes with the Ramer-Douglas-Peucker algorithm. Also Ramer-Douglas-Peucker algorithm is implemented from scratch.",
+      "category": "Image Processing",
+      "tags": ["Python", "OpenCV", "Mathematics"],
+      "github": "https://github.com/sezerfurkan/shape-detection-with-rdp-algorithm",
+      "image": "img/shape-detection-with-rdp-algorithm.jpg",
+      "date": "August 2023"
+    },
+    {
+      "id": 5,
+      "title": "Ocean Rush",
+      "description": "An endless runner game related with sea life. The player controls a sea creature and tries to avoid obstacles and collect coins.",
+      "category": "Games",
+      "tags": ["Unity", "C#", "Android"],
+      "github": "https://github.com/sezerfurkan/ocean-rush",
+      "image": "img/ocean-rush.jpg",
+      "date": "August 2023",
+      "demo": {
+        "type": "game",
+        "url": "live-demos/ocean-rush/index.html"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Project Deja Vu",
+      "description": "A multiple ending escape room game. The player tries to escape from a room by solving puzzles and finding clues.",
+      "category": "Games",
+      "tags": ["Unity", "C#", "Android", "WebGL"],
+      "github": "https://github.com/sezerfurkan/project-deja-vu",
+      "image": "img/project-deja-vu.jpg",
+      "date": "August 2022",
+      "demo": {
+        "type": "game",
+        "url": "live-demos/project-deja-vu/index.html"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Project Space",
+      "description": "A multiple ending puzzle game. The player tries to solve puzzles and make decisions to reach different ends.",
+      "category": "Games",
+      "tags": ["Unity", "C#", "Android"],
+      "github": "https://github.com/sezerfurkan/project-space",
+      "image": "img/project-space.jpg",
+      "date": "August 2022",
+      "demo": {
+        "type": "game",
+        "url": "live-demos/project-space/index.html"
+      }
+    }
+  ]
+} 
