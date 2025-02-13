@@ -1,0 +1,120 @@
+:root {
+    --bg-color: #282a36;
+    --text-color: #f8f8f2;
+    --accent-color: #50fa7b;
+    --terminal-header: #44475a;
+}
+
+.webgl-content * {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.webgl-content {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.webgl-content .logo, .progress {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.webgl-content .logo {
+    background: url('progresslogo.light.png') no-repeat center / contain;
+    width: 154px;
+    height: 130px;
+}
+
+.webgl-content .progress {
+    height: 18px;
+    width: 141px;
+    margin-top: 90px;
+}
+
+.webgl-content .progress .empty {
+    background: url('progressempty.light.png') no-repeat right / cover;
+    float: right;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.webgl-content .progress .full {
+    background: url('progressfull.light.png') no-repeat left / cover;
+    float: left;
+    width: 0%;
+    height: 100%;
+    display: inline-block;
+}
+
+.webgl-content .terminal-header {
+    background-color: var(--terminal-header);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.webgl-content .terminal-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.webgl-content .terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.webgl-content .close { background-color: #ff5f56; }
+.webgl-content .minimize { background-color: #ffbd2e; }
+.webgl-content .maximize { background-color: #27c93f; }
+
+.webgl-content .terminal-title {
+    margin-left: 1rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    font-family: 'Fira Code', monospace;
+}
+
+.webgl-content .footer {
+    background-color: var(--terminal-header);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.webgl-content .footer .webgl-logo,
+.webgl-content .footer .title {
+    color: var(--text-color);
+    font-family: 'Fira Code', monospace;
+}
+
+.webgl-content .footer .fullscreen {
+    background-image: url('fullscreen.png');
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    filter: invert(1) hue-rotate(180deg);
+}
+
+#unityContainer {
+    border: 1px solid var(--terminal-header);
+}
+
+@media (max-width: 1280px) {
+    #unityContainer {
+        width: 100vw !important;
+        height: 56.25vw !important; /* 16:9 aspect ratio */
+    }
+} 

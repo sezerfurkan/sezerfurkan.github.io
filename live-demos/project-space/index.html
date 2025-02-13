@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Game Player | Project Space</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="Build/UnityLoader.js"></script>
+    <style>
+        :root {
+            --bg-color: #282a36;
+            --text-color: #f8f8f2;
+            --accent-color: #50fa7b;
+            --terminal-header: #44475a;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem;
+            background-color: var(--bg-color);
+            font-family: 'Fira Code', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        @media (max-width: 960px) {
+            body {
+                padding: 0;
+            }
+        }
+    </style>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json");
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button close"></span>
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+            </div>
+            <div class="terminal-title">game.sh - Project Space</div>
+        </div>
+        <div id="unityContainer" style="width: 1280px; height: 720px"></div>
+        <div class="footer">
+            <div class="webgl-logo">Unity WebGL Player</div>
+            <div class="title">Project Space</div>
+            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        </div>
+    </div>
+  </body>
+</html>
