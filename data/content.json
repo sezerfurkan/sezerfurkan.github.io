@@ -9,18 +9,30 @@
   "about": {
     "greeting": "Hi, I'm Furkan Sezer 👋",
     "title": "",
-    "description": "I am a software engineer. During my education, I aimed to develop skills in software development. In line with this goal, I worked on projects involving image processing, artificial intelligence, Linux systems, and game and application development. I am continually improving myself in these areas. Currently, I am working at an IoT company, focusing on artificial intelligence and image processing and also when I have time I develop my own games."
+    "description": "I am a **software engineer**. Currently, I am working at an **IoT company**, focusing on **artificial intelligence** and **image processing**. During my education, I aimed to develop skills in software development. In line with this goal, I worked on projects involving **image processing**, **artificial intelligence**, **Linux systems**, and **application development**. I am continually improving myself in these areas and also when I have time I develop my own **games**."
   },
   "skills": {
     "title": "Technical Skills",
     "categories": [
       {
         "title": "Programming Languages",
-        "items": ["Python", "C", "C++", "C#"]
+        "items": [
+          "Python",
+          "C",
+          "C++",
+          "C#"
+        ]
       },
       {
         "title": "Tools & Platforms",
-        "items": ["Git", "Docker", "Linux", "AWS", "Unity", "Qt"]
+        "items": [
+          "Git",
+          "Docker",
+          "Linux",
+          "AWS",
+          "Unity",
+          "Qt"
+        ]
       }
     ]
   },
@@ -47,4 +59,4 @@
       }
     ]
   }
-} 
+}

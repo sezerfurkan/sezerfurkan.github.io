@@ -487,4 +487,9 @@ h1, h2, h3 {
     background-color: var(--bg-color);
     color: var(--accent-color) !important;
     border-color: var(--accent-color);
+}
+
+.about-content strong {
+    color: var(--accent-color);
+    font-weight: 600;
 } 

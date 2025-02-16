@@ -91,7 +91,10 @@
     justify-content: space-between;
 }
 
-.webgl-content .footer .webgl-logo,
+.webgl-content .footer .webgl-logo {
+    display: none; /* WebGL Player yazısını gizle */
+}
+
 .webgl-content .footer .title {
     color: var(--text-color);
     font-family: 'Fira Code', monospace;

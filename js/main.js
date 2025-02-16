@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h1>${contentData.about.greeting}</h1>
             <p class="typing-text"></p>
             <div class="about-content">
-                <p>${contentData.about.description}</p>
+                <p>${contentData.about.description.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</p>
             </div>
         `;
 
@@ -184,9 +184,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         `).join('')}
                     </div>
                     <div class="project-links">
-                        <a href="${project.github}" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
                         <a href="#" class="project-link project-details" data-project-id="${project.id}">
                             <i class="fas fa-info-circle"></i> Details
                         </a>
@@ -228,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="modal-body">
                     <div class="modal-loading">
-                        <i class="fas fa-spinner fa-spin"></i> Loading README...
+                        <i class="fas fa-spinner fa-spin"></i> Loading project details...
                     </div>
                 </div>
             </div>
@@ -246,7 +243,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Accept': 'application/vnd.github.v3.html'
             }
         })
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Content not found');
+            }
+            return response.text();
+        })
         .then(readmeHtml => {
             // Update modal content with README
             const modalBody = modal.querySelector('.modal-body');
@@ -259,11 +261,12 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
             const modalBody = modal.querySelector('.modal-body');
             modalBody.innerHTML = `
-                <div class="error-message">
-                    <i class="fas fa-exclamation-circle"></i>
-                    Failed to load README content. Please visit the 
-                    <a href="${project.github}" target="_blank">GitHub repository</a> 
-                    for more information.
+                <div class="error-message" style="text-align: center; padding: 2rem;">
+                    <i class="fas fa-tools" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <p>Project details are coming soon!</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">
+                        This section is currently under construction.
+                    </p>
                 </div>
             `;
         });
