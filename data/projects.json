@@ -1,5 +1,5 @@
 {
-  "categories": ["All", "Image Processing", "Games"],
+  "categories": ["All", "Image Processing", "Signal Processing", "Embedded Systems", "Games"],
   "projects": [
     {
       "id": 1,
@@ -23,6 +23,26 @@
     },
     {
       "id": 3,
+      "title": "Sound Source Localization",
+      "description": "A matlab simulation that localizes the sound source using hydrophone arrays at underwater environment.",
+      "category": "Signal Processing",
+      "tags": ["Matlab"],
+      "github": "https://github.com/sezerfurkan/sound-source-localization",
+      "image": "img/sound-source-localization.jpg",
+      "date": "August 2022"
+    },
+    {
+      "id": 4,
+      "title": "Autonomous Solar Panel Cleaning System",
+      "description": "An arduino project that cleans solar panels automatically. It detects cloudiness and dirt on the panel using voltage and current data of the panel. It uses stepper motor to clean the panel. It also has an observation screen to see the panel's condition.",
+      "category": "Embedded Systems",
+      "tags": ["Arduino", "C"],
+      "github": "https://github.com/sezerfurkan/autonomous-solar-panel-cleaning-system",
+      "image": "img/autonomous-solar-panel-cleaning-system.jpg",
+      "date": "January 2023"
+    },
+    {
+      "id": 5, 
       "title": "Underwater Line Tracking",
       "description": "An image processing project that tracks lines underwater. It uses image processing to detect and track lines underwater.",
       "category": "Image Processing",
@@ -32,7 +52,7 @@
       "date": "March 2022"
     },
     {
-      "id": 4,
+      "id": 6,
       "title": "Shape Detection with RDP Algorithm",
       "description": "An image processing project that detects shapes with the Ramer-Douglas-Peucker algorithm. Also Ramer-Douglas-Peucker algorithm is implemented from scratch.",
       "category": "Image Processing",
@@ -42,7 +62,7 @@
       "date": "April 2022"
     },
     {
-      "id": 5,
+      "id": 7,
       "title": "Ocean Rush",
       "description": "An endless runner game related with sea life. The player controls a sea creature and tries to avoid obstacles and collect coins.",
       "category": "Games",
@@ -56,7 +76,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 8,
       "title": "Project Deja Vu",
       "description": "A multiple ending escape room game. The player tries to escape from a room by solving puzzles and finding clues.",
       "category": "Games",
@@ -70,7 +90,7 @@
       }
     },
     {
-      "id": 7,
+      "id": 9,
       "title": "Project Space",
       "description": "A multiple ending puzzle game. The player tries to solve puzzles and make decisions to reach different ends.",
       "category": "Games",
@@ -84,7 +104,7 @@
       }
     },
     {
-      "id": 8,
+      "id": 10,
       "title": "Project Trivia",
       "description": "A trivia game. The player tries to answer questions correctly to progress.",
       "category": "Games",
